@@ -1,150 +1,146 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Feliz Cumpleaños, Amorcito ❤️</title>
 
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-body{
-background:#090909;
-color:white;
-overflow-x:hidden;
-}
+    <title>Feliz Cumpleaños ❤️</title>
 
-.hero{
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-background:linear-gradient(180deg,#000,#111);
-}
-
-h1{
-font-size:55px;
-color:#FFD700;
-margin-bottom:20px;
-}
-
-p{
-font-size:22px;
-line-height:1.7;
-max-width:800px;
-margin:auto;
-}
-
-button{
-margin-top:40px;
-padding:18px 45px;
-font-size:20px;
-background:#FFD700;
-border:none;
-border-radius:50px;
-cursor:pointer;
-font-weight:bold;
-transition:.3s;
-}
-
-button:hover{
-transform:scale(1.08);
-}
-
-section{
-padding:90px 10%;
-}
-
-h2{
-text-align:center;
-font-size:40px;
-margin-bottom:40px;
-color:#FFD700;
-}
-
-.timeline{
-max-width:800px;
-margin:auto;
-font-size:22px;
-line-height:2.2;
-}
-
-footer{
-padding:50px;
-text-align:center;
-font-size:20px;
-}
-</style>
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
 
-<div class="hero">
+    <!-- Corazones -->
+    <div class="corazones"></div>
 
-<div>
+    <!-- Portada -->
+    <div class="hero">
 
-<h1>Feliz Cumpleaños, Amorcito ❤️</h1>
+        <div class="overlay">
 
-<p>
+            <h3>07 • JULIO • 2026</h3>
 
-Hay personas que llegan a nuestra vida para cambiarla por completo.
+            <h1>Feliz Cumpleaños</h1>
 
-Tú eres una de ellas.
+            <h2>Amorcito ❤️</h2>
 
-</p>
+            <p>
 
-<button onclick="document.getElementById('historia').scrollIntoView({behavior:'smooth'})">
+                Hay personas que llegan a nuestra vida por casualidad...
 
-Comenzar nuestra historia
+                pero se quedan para siempre en el corazón.
 
-</button>
+            </p>
+
+            <button id="btnComenzar">
+
+                Comenzar Nuestra Historia
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Historia -->
+
+    <section id="historia">
+
+        <div class="contenido">
+
+            <h2>El comienzo de algo muy bonito ❤️</h2>
+
+            <div class="timeline">
+
+    <div class="evento">
+
+    <div class="icono">❤️</div>
+
+    <div class="info">
+
+        <h3>29 de Mayo</h3>
+
+        <p>
+            Hay días que parecen completamente normales...
+            hasta que conoces a alguien capaz de convertirlos
+            en un recuerdo que nunca esperabas guardar con tanto cariño.
+        </p>
+
+    </div>
 
 </div>
 
-</div>
+ <div class="evento">
 
-<section id="historia">
+    <div class="icono">🌊</div>
 
-<h2>Nuestra Historia</h2>
+    <div class="info">
 
-<div class="timeline">
+        <h3>Nuestra primera salida</h3>
 
-❤️ 29 de Mayo — Nuestra primera salida.
+        <p>
+            Descubrí que no era el lugar lo que hacía especial ese momento...
+            era la tranquilidad y la alegría de compartirlo contigo.
+        </p>
 
-<br><br>
-
-📷 Desde ese día cada momento contigo se convirtió en un recuerdo inolvidable.
-
-<br><br>
-
-🎂 Hoy celebramos tu cumpleaños.
-
-<br><br>
-
-💖 Gracias por permitirme formar parte de tu vida.
+    </div>
 
 </div>
 
-</section>
+ <div class="evento">
 
-<footer>
+    <div class="icono">💬</div>
 
-Con mucho cariño,
+    <div class="info">
 
-Dei ❤️
+        <h3>Conversaciones</h3>
 
-</footer>
+        <p>
+            Poco a poco nuestras conversaciones dejaron de ser solo mensajes.
+            Se convirtieron en parte de mis días y en algo que siempre esperaba con ilusión.
+        </p>
+
+    </div>
+
+</div>
+
+ <div class="evento">
+
+    <div class="icono">🎂</div>
+
+    <div class="info">
+
+        <h3>07 de Julio</h3>
+
+        <p>
+            Hoy celebro la alegría de que exista una persona tan especial como tú.
+            Espero que este cumpleaños esté lleno de sonrisas, momentos bonitos y nuevos recuerdos.
+        </p>
+
+    </div>
+
+</div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        Con mucho cariño ❤️
+
+        <br><br>
+
+        <strong>Dei</strong>
+
+    </footer>
+
+    <script src="js/script.js"></script>
 
 </body>
 
 </html>
-
-Primer diseño de la página romántica

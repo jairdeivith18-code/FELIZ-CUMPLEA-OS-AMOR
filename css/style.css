@@ -1,124 +1,276 @@
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Segoe UI, sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
-
-background:#090909;
-color:white;
-
+    background:#fff7f8;
+    color:#444;
+    overflow-x:hidden;
 }
+
+/* ---------------- HERO ---------------- */
 
 .hero{
 
-height:100vh;
+    height:100vh;
 
-display:flex;
+    background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=1600");
 
-justify-content:center;
+    background-size:cover;
+    background-position:center;
 
-align-items:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
-text-align:center;
-
-background:linear-gradient(180deg,#000,#111);
-
-padding:30px;
+    position:relative;
 
 }
 
 .overlay{
 
-max-width:900px;
+    text-align:center;
+    color:white;
+    padding:20px;
+    z-index:2;
+
+    animation:aparecer 2s ease;
 
 }
 
-h3{
+.overlay h3{
 
-color:#FFD700;
-
-letter-spacing:6px;
-
-margin-bottom:20px;
-
-font-size:20px;
+    letter-spacing:5px;
+    font-weight:300;
 
 }
 
-h1{
+.overlay h1{
 
-font-size:70px;
-
-margin-bottom:15px;
-
-}
-
-h2{
-
-color:#FFD700;
-
-font-size:45px;
-
-margin-bottom:30px;
+    font-size:70px;
+    margin:20px 0;
 
 }
 
-p{
+.overlay h2{
 
-font-size:23px;
+    color:#ffd4e5;
+    margin-bottom:20px;
 
-line-height:1.8;
+}
 
-margin-bottom:45px;
+.overlay p{
+
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+    font-size:20px;
 
 }
 
 button{
 
-padding:18px 45px;
+    margin-top:40px;
+    padding:18px 40px;
 
-font-size:20px;
+    border:none;
+    border-radius:40px;
 
-border:none;
+    background:#ff4d88;
+    color:white;
 
-border-radius:50px;
+    font-size:18px;
 
-background:#FFD700;
+    cursor:pointer;
 
-cursor:pointer;
-
-transition:.3s;
-
-font-weight:bold;
+    transition:.3s;
 
 }
 
 button:hover{
 
-transform:scale(1.08);
+    transform:scale(1.08);
 
 }
 
-.overlay{
+/* ---------------- HISTORIA ---------------- */
 
+section{
+
+    padding:100px 20px;
+
+}
+
+.contenido{
+
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+
+    opacity:0;
+    transform:translateY(80px);
+
+    transition:1.3s;
+
+}
+
+.contenido.mostrar{
+
+    opacity:1;
+    transform:translateY(0);
+
+}
+
+.contenido h2{
+
+    color:#ff4d88;
+    margin-bottom:40px;
+    font-size:40px;
+
+}
+
+.texto{
+
+    font-size:20px;
+    line-height:2;
+
+}
+
+/* ---------------- FOOTER ---------------- */
+
+footer{
+
+    background:#ff4d88;
+    color:white;
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
+/* ---------------- CORAZONES ---------------- */
+
+.corazones{
+
+    position:fixed;
+
+    width:100%;
+    height:100%;
+
+    pointer-events:none;
+
+    overflow:hidden;
+
+    z-index:1;
+
+}
+
+.corazon{
+
+    position:absolute;
+
+    color:#ff5c8a;
+
+    animation:caer linear forwards;
+
+}
+
+@keyframes caer{
+
+0%{
+
+transform:translateY(-10vh);
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(110vh);
 opacity:0;
 
+}
+
+}
+
+@keyframes aparecer{
+
+from{
+
+opacity:0;
 transform:translateY(40px);
 
 }
 
-/*=========================
-      NUESTRA HISTORIA
-==========================*/
+to{
 
-#historia{
+opacity:1;
+transform:translateY(0);
 
-min-height:100vh;
+}
 
-background:#111;
+}
+
+/* ===========================
+TIMELINE
+=========================== */
+
+.timeline{
+
+margin-top:60px;
+
+display:flex;
+
+flex-direction:column;
+
+gap:40px;
+
+}
+
+.evento{
+
+display:flex;
+
+align-items:flex-start;
+
+gap:25px;
+
+background:white;
+
+padding:25px;
+
+border-radius:20px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+transition:.4s;
+
+}
+
+.evento:hover{
+
+transform:translateY(-8px);
+
+}
+
+.icono{
+
+width:70px;
+
+height:70px;
+
+border-radius:50%;
+
+background:#ff4d88;
 
 display:flex;
 
@@ -126,54 +278,28 @@ justify-content:center;
 
 align-items:center;
 
-padding:100px 15%;
-
-}
-
-.contenido{
-
-max-width:900px;
-
-text-align:center;
-
-}
-
-.contenido h2{
-
-font-size:55px;
-
-color:#FFD700;
-
-margin-bottom:40px;
-
-}
-
-.texto{
-
-font-size:25px;
-
-line-height:2;
+font-size:30px;
 
 color:white;
 
+flex-shrink:0;
+
 }
 
-#carta{
-    padding:100px 20px;
-    background:#fff8f8;
-    text-align:center;
+.info h3{
+
+margin-bottom:10px;
+
+color:#ff4d88;
+
+font-size:24px;
+
 }
 
-.carta-box{
-    max-width:800px;
-    margin:auto;
-    background:white;
-    padding:40px;
-    border-radius:20px;
-    box-shadow:0 10px 30px rgba(0,0,0,.15);
-}
+.info p{
 
-.carta-box p{
-    line-height:2;
-    font-size:18px;
-}     
+line-height:1.8;
+
+font-size:18px;
+
+}
