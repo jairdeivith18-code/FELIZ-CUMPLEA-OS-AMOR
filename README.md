@@ -1,2 +1,2 @@
-# FELIZ-CUMPLEA-OS-AMOR
+# FELIZ-CUMPLEA-AMOR
 Feliz cumpleaños para la personita más linda y tierna que he conocido, gracias por llegar a mi vida.
