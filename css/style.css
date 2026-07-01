@@ -115,10 +115,9 @@ section{
     margin:auto;
     text-align:center;
 
-    opacity:0;
-    transform:translateY(80px);
+    opacity:1;
 
-    transition:1.3s;
+    transform:translateY(0);
 
 }
 
@@ -301,5 +300,904 @@ font-size:24px;
 line-height:1.8;
 
 font-size:18px;
+
+}
+
+/*====================================
+TRANSICIÓN CINEMATOGRÁFICA
+====================================*/
+
+#transicion{
+
+min-height:100vh;
+
+background:#fff;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:40px;
+
+text-align:center;
+
+}
+
+.mensaje{
+
+max-width:900px;
+
+}
+
+.frase{
+
+display:none;
+
+font-size:42px;
+
+line-height:1.6;
+
+font-weight:300;
+
+color:#444;
+
+animation:fade 1.5s;
+
+}
+
+.frase.activa{
+
+display:block;
+
+}
+
+#continuar{
+
+display:none;
+
+margin-top:60px;
+
+padding:18px 45px;
+
+border:none;
+
+border-radius:50px;
+
+background:#ff4d88;
+
+color:white;
+
+font-size:20px;
+
+cursor:pointer;
+
+transition:.4s;
+
+}
+
+#continuar:hover{
+
+transform:scale(1.08);
+
+}
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/*====================================
+GALERÍA DE RECUERDOS
+====================================*/
+
+#recuerdos{
+
+    background:#fff7f8;
+
+    padding:100px 8%;
+
+}
+
+#recuerdos h2{
+
+    text-align:center;
+
+    color:#ff4d88;
+
+    font-size:42px;
+
+    margin-bottom:70px;
+
+}
+
+.galeria{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:70px;
+
+    max-width:1100px;
+
+    margin:auto;
+
+}
+
+.tarjeta{
+
+    background:white;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.10);
+
+    transition:.4s;
+
+}
+
+.tarjeta:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 25px 50px rgba(0,0,0,.18);
+
+}
+
+.tarjeta img{
+
+    width:100%;
+
+    display:block;
+
+    max-height:650px;
+
+    object-fit:cover;
+
+}
+
+.tarjeta h3{
+
+    color:#ff4d88;
+
+    font-size:30px;
+
+    margin:30px 30px 15px;
+
+}
+
+.tarjeta p{
+
+    margin:0 30px 35px;
+
+    font-size:20px;
+
+    line-height:1.9;
+
+    color:#555;
+
+}
+
+/*=========================
+RESPONSIVE
+=========================*/
+
+@media(max-width:768px){
+
+.overlay h1{
+
+font-size:48px;
+
+}
+
+.overlay p{
+
+font-size:18px;
+
+}
+
+.frase{
+
+font-size:30px;
+
+}
+
+.tarjeta h3{
+
+font-size:24px;
+
+}
+
+.tarjeta p{
+
+font-size:18px;
+
+}
+
+}
+
+/*====================================
+LO QUE MÁS ADMIRO DE TI
+====================================*/
+
+#admiro{
+
+    background:linear-gradient(180deg,#fff7f8,#ffffff);
+
+    padding:120px 8%;
+
+}
+
+.contenedor-admiro{
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+#admiro h2{
+
+    text-align:center;
+
+    color:#ff4d88;
+
+    font-size:42px;
+
+    margin-bottom:40px;
+
+}
+
+.intro{
+
+    text-align:center;
+
+    font-size:22px;
+
+    line-height:2;
+
+    color:#555;
+
+    margin-bottom:70px;
+
+}
+
+.cualidad{
+
+    background:white;
+
+    padding:35px;
+
+    margin-bottom:35px;
+
+    border-radius:22px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+}
+
+.cualidad:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.cualidad span{
+
+    font-size:42px;
+
+    display:block;
+
+    margin-bottom:15px;
+
+}
+
+.cualidad h3{
+
+    color:#ff4d88;
+
+    font-size:28px;
+
+    margin-bottom:15px;
+
+}
+
+.cualidad p{
+
+    font-size:19px;
+
+    line-height:1.9;
+
+    color:#555;
+
+}
+
+.final{
+
+    text-align:center;
+
+    background:#ff4d88;
+
+    color:white;
+
+}
+
+.final h3{
+
+    color:white;
+
+    font-size:32px;
+
+}
+
+.final p{
+
+    color:white;
+
+    font-size:22px;
+
+    line-height:2;
+
+}
+
+@media(max-width:768px){
+
+    .intro{
+
+        font-size:19px;
+
+    }
+
+    .cualidad{
+
+        padding:25px;
+
+    }
+
+    .cualidad h3{
+
+        font-size:24px;
+
+    }
+
+    .cualidad p{
+
+        font-size:18px;
+
+    }
+
+}   
+
+/*====================================
+TODO LO QUE AÚN NOS QUEDA POR VIVIR
+====================================*/
+
+#futuro{
+
+    background:linear-gradient(180deg,#ffffff,#fff4f8);
+
+    padding:120px 8%;
+
+}
+
+.contenedor-futuro{
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+#futuro h2{
+
+    color:#ff4d88;
+
+    font-size:42px;
+
+    margin-bottom:60px;
+
+}
+
+.frase-futuro{
+
+    font-size:28px;
+
+    line-height:1.8;
+
+    color:#555;
+
+    margin-bottom:35px;
+
+}
+
+.lista-suenos{
+
+    margin:70px auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+}
+
+.sueno{
+
+    background:white;
+
+    padding:22px 30px;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    font-size:22px;
+
+    transition:.35s;
+
+}
+
+.sueno:hover{
+
+    transform:translateX(12px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.15);
+
+}
+
+.mensaje-final{
+
+    margin-top:70px;
+
+    font-size:24px;
+
+    line-height:2;
+
+    color:#555;
+
+    font-style:italic;
+
+}
+
+@media(max-width:768px){
+
+    #futuro h2{
+
+        font-size:34px;
+
+    }
+
+    .frase-futuro{
+
+        font-size:22px;
+
+    }
+
+    .sueno{
+
+        font-size:18px;
+
+        padding:18px;
+
+    }
+
+    .mensaje-final{
+
+        font-size:20px;
+
+    }
+
+}
+
+/*====================================
+SOBRE
+====================================*/
+
+#sobre{
+
+padding:120px 20px;
+
+background:#fff7f8;
+
+text-align:center;
+
+}
+
+.contenedor-sobre{
+
+max-width:800px;
+
+margin:auto;
+
+}
+
+#sobre h2{
+
+color:#ff4d88;
+
+font-size:42px;
+
+margin-bottom:20px;
+
+}
+
+#sobre p{
+
+font-size:22px;
+
+line-height:1.8;
+
+margin-bottom:50px;
+
+color:#555;
+
+}
+
+.sobre{
+
+width:240px;
+
+height:160px;
+
+margin:auto;
+
+position:relative;
+
+cursor:pointer;
+
+transition:.4s;
+
+}
+
+.sobre:hover{
+
+transform:scale(1.05);
+
+}
+
+.cuerpo{
+
+position:absolute;
+
+bottom:0;
+
+width:100%;
+
+height:120px;
+
+background:#ffb6c9;
+
+border-radius:0 0 12px 12px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:50px;
+
+}
+
+.tapa{
+
+position:absolute;
+
+top:0;
+
+width:0;
+
+height:0;
+
+border-left:120px solid transparent;
+
+border-right:120px solid transparent;
+
+border-top:80px solid #ff8fb1;
+
+transform-origin:top;
+
+transition:.8s;
+
+}
+
+.sobre.abierto .tapa{
+
+transform:rotateX(180deg);
+
+}
+
+.texto-sobre{
+
+margin-top:40px;
+
+font-style:italic;
+
+color:#888;
+
+}
+
+/*====================================
+PAUSA EMOCIONAL
+====================================*/
+
+#pausa-final{
+
+    min-height:100vh;
+
+    background:linear-gradient(180deg,#fff,#fff7f8);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:60px 20px;
+
+}
+
+.contenedor-pausa{
+
+    max-width:900px;
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+.pausa-texto{
+
+    display:block;
+
+    font-size:36px;
+
+    line-height:1.8;
+
+    color:#555;
+
+    margin:40px auto;
+
+}
+
+
+.pausa-texto.especial{
+
+    color:#ff4d88;
+
+    font-weight:600;
+
+    font-size:42px;
+
+}
+
+@media(max-width:768px){
+
+    .pausa-texto{
+
+        font-size:24px;
+
+    }
+
+    .pausa-texto.especial{
+
+        font-size:30px;
+
+    }
+
+}
+
+/*====================================
+CARTA
+====================================*/
+
+#carta{
+
+    display:none;
+
+    padding:120px 20px;
+
+    background:#fffafc;
+
+}
+
+.papel{
+
+    max-width:900px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:60px;
+
+    border-radius:25px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.15);
+
+    border:1px solid #f3d7df;
+
+    animation:subirPapel 1.5s ease;
+
+}
+
+.papel h2{
+
+    text-align:center;
+
+    color:#ff4d88;
+
+    margin-bottom:40px;
+
+    font-size:40px;
+
+}
+
+#contenidoCarta{
+
+    font-size:22px;
+
+    line-height:2.2;
+
+    color:#555;
+
+    white-space:pre-line;
+
+}
+
+@keyframes subirPapel{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(80px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*====================================
+ÚLTIMO CAPÍTULO
+====================================*/
+
+#ultimoCapitulo{
+
+    min-height:100vh;
+
+    background:linear-gradient(#fff,#fff6f9);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:80px 20px;
+
+}
+
+.contenedor-final{
+
+    max-width:900px;
+
+    text-align:center;
+
+}
+
+.final-frase{
+
+    display:none;
+
+    font-size:38px;
+
+    line-height:1.8;
+
+    color:#555;
+
+    animation:fade 1.5s;
+
+}
+
+.final-frase.activa{
+
+    display:block;
+
+}
+
+.final-frase.especial{
+
+    color:#ff4d88;
+
+    font-size:46px;
+
+    font-weight:600;
+
+}
+
+#firmaFinal{
+
+    display:none;
+
+    color:#ff4d88;
+
+    margin-top:80px;
+
+    font-size:42px;
+
+    line-height:1.8;
+
+    animation:fade 2s;
+
+}
+
+#firmaFinal span{
+
+    color:#777;
+
+    font-size:28px;
+
+    font-weight:300;
+
+}
+
+#firmaFinal strong{
+
+    font-size:52px;
 
 }
